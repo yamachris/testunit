@@ -1,0 +1,104 @@
+@import url(normalize.css);
+@import url(header.css);
+
+:root {
+    /*** Variables couleurs ***/
+    --noir: hsla(0, 0%, 0%, .9);
+    --blanc: hsl(0, 0%, 100%);
+    --rouge: hsl(350, 85%, 42%);
+    --ombre: 2px 2px 8px hsla(0, 0%, 0%, .8);
+    --ombre-hover: 4px 4px 16px hsla(0, 0%, 0%, .6);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding-top: 0;
+    z-index: 1;
+}
+main>section {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    z-index: 2;
+}
+main>section:nth-child(1) {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: space-around;
+    justify-content: space-around;
+    background: linear-gradient(45deg, var(--rouge), rgba(255, 38, 0, 0.945));
+    overflow-x: scroll;
+}
+main>section>aside {}
+section>span {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: space-around;
+    justify-content: space-around;
+    width: 100%;
+    height: 90vh;
+    z-index: 3;
+}
+span>img {
+    display: block;
+    width: 12em;
+    height: auto;
+    margin: 10px;
+    z-index: 4;
+}
+section:nth-child(2) {
+    display: flex;
+    position: absolute;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    z-index: 5;
+}
+button {
+    display: block;
+    background-color: var(--blanc);
+    font-size: large;
+    font-weight: bold;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow: var(--ombre);
+    z-index: 6;
+}
+button:hover {
+    display: block;
+    background-color: var(--noir);
+    color: var(--blanc);
+    font-size: larger;
+    font-weight: bolder;
+    padding: 22px;
+    border: 1px solid black;
+    box-shadow: var(--ombre-h);
+    z-index: 6;
+}
+button:focus ~ section:nth-child(2) {
+    background: var(--noir);
+}

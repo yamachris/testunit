@@ -32,24 +32,62 @@ main {
     width: 100%;
     height: auto;
     min-height: 100vh;
-    padding-top: 0;
     z-index: 1;
 }
-main>section {
+main>section:not(#hero) {
+    display: flex;
     width: 100%;
     height: auto;
-    min-height: 100vh;
     z-index: 2;
 }
-main>section:nth-child(1) {
+section:nth-child(1) {
     display: flex;
+    position: absolute;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 5vh;
+    background: transparent;
+    z-index: 5;
+}
+button {
+    display: block;
+    background-color: var(--blanc);
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-top: 40%;
+    padding: 20px 50px;
+    box-shadow: var(--ombre);
+    animation: 1s ease-in-out button infinite;
+    z-index: 6;
+}
+button:hover {
+    display: block;
+    background-color: var(--noir);
+    color: var(--blanc);
+    font-size: larger;
+    font-weight: bolder;
+    padding: 22px 55px;
+    border: 1px solid black;
+    box-shadow: var(--ombre-hover);
+    z-index: 6;
+}
+button:focus ~ section:nth-child(2) {
+    background: var(--noir);
+}
+main>section:nth-child(2) {
     flex-flow: row wrap;
     align-items: space-around;
     justify-content: space-around;
+    min-height: 100vh;
     background: linear-gradient(45deg, var(--rouge), rgba(255, 38, 0, 0.945));
-    overflow-x: scroll;
+    overflow-y: scroll;
+    filter: brightness(.3);
+    z-index: 4;
 }
-main>section>aside {}
 section>span {
     display: flex;
     flex-flow: row wrap;
@@ -66,39 +104,23 @@ span>img {
     margin: 10px;
     z-index: 4;
 }
-section:nth-child(2) {
-    display: flex;
-    position: absolute;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    background: transparent;
-    z-index: 5;
+main>section>iframe {
+    width: 100%;
+    height: 90vh;
 }
-button {
-    display: block;
-    background-color: var(--blanc);
-    font-size: large;
-    font-weight: bold;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 50px;
-    box-shadow: var(--ombre);
-    z-index: 6;
+@keyframes button {
+    from {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(1.2);
+    }
+    to {
+        filter: brightness(1);
+    }
 }
-button:hover {
-    display: block;
-    background-color: var(--noir);
-    color: var(--blanc);
-    font-size: larger;
-    font-weight: bolder;
-    padding: 22px;
-    border: 1px solid black;
-    box-shadow: var(--ombre-h);
-    z-index: 6;
-}
-button:focus ~ section:nth-child(2) {
-    background: var(--noir);
+@media screen and (max-width: 1500px){
+    button {
+        margin-top: 80vh;
+    }
 }

@@ -56,14 +56,14 @@ header>nav:nth-child(2)>menu>a:hover {
     text-decoration: underline;
     text-underline-position: under;
 }
-header>nav:nth-child(2)>menu>a[href="#quatrieme"] {
+header>nav:nth-child(2)>menu>a[href="#demo"] {
     background-color: var(--noir);
     color: var(--blanc);
     padding: 8px;
     border-radius: 20px;
     transition: .2s ease-in-out;
 }
-header>nav:nth-child(2)>menu>a[href="#quatrieme"]:hover {
+header>nav:nth-child(2)>menu>a[href="#demo"]:hover {
     filter: invert(2);
 }
 

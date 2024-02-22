@@ -1,0 +1,32 @@
+main>section:nth-child(3) {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 60vw;
+    max-height: 80vh;
+    margin: 10vh 20vw 10vh 20vw;
+    z-index: 4;
+}
+section:nth-child(3)>figure {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+    width: 18em;
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background: whitesmoke;
+    z-index: 4;
+}
+section:nth-child(3)>figure>img {
+    width: 8em;
+    height: auto;
+}
+section:nth-child(3)>figure>figcaption {
+    font-size: 1em;
+    font-weight: bold;
+    z-index: 4;
+}

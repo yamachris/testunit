@@ -1,5 +1,8 @@
 @import url(normalize.css);
 @import url(header.css);
+@import url(section1.css);
+@import url(section2.css);
+@import url(section3.css);
 
 :root {
     /*** Variables couleurs ***/
@@ -21,6 +24,7 @@ body {
     height: auto;
     min-height: 100vh;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     z-index: 0;
 }
 
@@ -34,75 +38,13 @@ main {
     min-height: 100vh;
     z-index: 1;
 }
-main>section:not(#hero) {
+main>section {
     display: flex;
-    width: 100%;
-    height: auto;
-    z-index: 2;
-}
-section:nth-child(1) {
-    display: flex;
-    position: absolute;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
     width: 100vw;
-    height: 5vh;
-    background: transparent;
-    z-index: 5;
-}
-button {
-    display: block;
-    background-color: var(--blanc);
-    font-size: large;
-    font-weight: bold;
-    border: 1px solid black;
-    border-radius: 50px;
-    margin-top: 40%;
-    padding: 20px 50px;
-    box-shadow: var(--ombre);
-    animation: 1s ease-in-out button infinite;
-    z-index: 6;
-}
-button:hover {
-    display: block;
-    background-color: var(--noir);
-    color: var(--blanc);
-    font-size: larger;
-    font-weight: bolder;
-    padding: 22px 55px;
-    border: 1px solid black;
-    box-shadow: var(--ombre-hover);
-    z-index: 6;
-}
-button:focus ~ section:nth-child(2) {
-    background: var(--noir);
-}
-main>section:nth-child(2) {
-    flex-flow: row wrap;
-    align-items: space-around;
-    justify-content: space-around;
-    min-height: 100vh;
-    background: linear-gradient(45deg, var(--rouge), rgba(255, 38, 0, 0.945));
-    overflow-y: scroll;
-    filter: brightness(.3);
-    z-index: 4;
-}
-section>span {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: space-around;
-    justify-content: space-around;
-    width: 100%;
-    height: 90vh;
-    z-index: 3;
-}
-span>img {
-    display: block;
-    width: 12em;
-    height: auto;
-    margin: 10px;
-    z-index: 4;
+    height: 100vh;
+    padding-top: 10vh;
+    text-wrap: balance;
+    z-index: 2;
 }
 main>section>iframe {
     width: 100%;

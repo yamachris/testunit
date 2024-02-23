@@ -5,14 +5,16 @@ section:nth-child(1) {
     justify-content: flex-start;
     max-width: 60vw;
     max-height: 60vh;
-    padding: 20vh 20vw 20vh 20vw;
+    padding: 10vh 20vw 20vh 20vw;
     border-radius: 20px;
     z-index: 5;
 }
 section:nth-child(1)>img {
     display: block;
-    width: auto;
+    width: 80%;
     height: auto;
+    border-radius: 50px;
+    box-shadow: var(--ombre);
 }
 button {
     display: block;
@@ -31,10 +33,13 @@ button:hover {
     display: block;
     background-color: var(--noir);
     color: var(--blanc);
-    font-size: larger;
-    font-weight: bolder;
-    padding: 22px 55px;
     border: 1px solid black;
     box-shadow: var(--ombre-hover);
     z-index: 6;
+}
+
+@media screen and (max-width: 850px) {
+    section:nth-child(1) {
+        margin-top: 18vh;
+    }
 }

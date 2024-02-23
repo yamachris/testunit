@@ -24,3 +24,26 @@ section:nth-child(2)>figure>img {
     object-position: top;
     border-radius: 25px;
 }
+
+@media screen and (max-width: 1700px) {
+    main>section:nth-child(2) {
+        height: auto;
+        margin: 20vh 0;
+    }
+section:nth-child(2)>figure,
+section:nth-child(2)>figure>img {
+    width: 14em;
+}
+}
+
+@media screen and (max-width: 950px) {
+    main>section:nth-child(2) {
+        min-width: 80vw;
+        min-height: 100vh;
+        gap: 10px;
+    }
+    section:nth-child(2)>figure,
+    section:nth-child(2)>figure>img {
+        width: 10em;
+    }
+}

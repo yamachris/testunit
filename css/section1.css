@@ -13,6 +13,14 @@ section:nth-child(1)>img {
     display: block;
     width: 80%;
     height: auto;
+    border-radius: 50px;
+    box-shadow: var(--ombre);
+<<<<<<< HEAD
+}
+section:nth-child(1)>a {
+    text-decoration: none;
+=======
+>>>>>>> 4c3e02975519a7f1e66dcbc11fa080ff63973c95
 }
 button {
     display: block;
@@ -34,4 +42,20 @@ button:hover {
     border: 1px solid black;
     box-shadow: var(--ombre-hover);
     z-index: 6;
+}
+
+@media screen and (max-width: 850px) {
+    section:nth-child(1) {
+<<<<<<< HEAD
+        min-width: 100vw;
+        margin-top: 18vh;
+        padding: 0;
+    }
+    section:nth-child(1)>img {
+        display: block;
+        width: 80%;
+=======
+        margin-top: 18vh;
+>>>>>>> 4c3e02975519a7f1e66dcbc11fa080ff63973c95
+    }
 }

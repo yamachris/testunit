@@ -13,11 +13,6 @@ section:nth-child(1)>img {
     display: block;
     width: 80%;
     height: auto;
-    border-radius: 50px;
-    box-shadow: var(--ombre);
-}
-section:nth-child(1)>a {
-    text-decoration: none;
 }
 button {
     display: block;
@@ -39,16 +34,4 @@ button:hover {
     border: 1px solid black;
     box-shadow: var(--ombre-hover);
     z-index: 6;
-}
-
-@media screen and (max-width: 850px) {
-    section:nth-child(1) {
-        min-width: 100vw;
-        margin-top: 18vh;
-        padding: 0;
-    }
-    section:nth-child(1)>img {
-        display: block;
-        width: 80%;
-    }
 }

@@ -30,3 +30,29 @@ section:nth-child(3)>figure>figcaption {
     font-weight: bold;
     z-index: 4;
 }
+
+@media screen and (max-width: 1600px) {
+    main>section:nth-child(3) {
+        height: auto;
+    }
+    section:nth-child(3)>figure {
+        width: 16em;
+    }
+    section:nth-child(3)>figure>img {
+        width: 6em;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    main>section:nth-child(3) {
+        min-width: 100vw;
+        min-height: 100vh;
+        margin: 20vh 5vh;
+    }
+    section:nth-child(3)>figure {
+        width: 14em;
+    }
+    section:nth-child(3)>figure>img {
+        width: 4em;
+    }
+}

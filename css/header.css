@@ -14,21 +14,27 @@ header>nav:nth-child(1) {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-around;
-    width: 25%;
+    justify-content: flex-start;
+    width: 35%;
     max-height: 100%;
     z-index: 7;
 }
 header>nav:nth-child(1)>h1 {
-    font-size: 2.5em;
-    padding-left: 10px;
+    font-size: 100%;
+    margin-left: 10px;
+    z-index: 8;
+}
+header>nav:nth-child(1)>a {
+    width: auto;
+    height: 4.5em;
+    margin: 5px 10px;
     z-index: 8;
 }
 header>nav:nth-child(1)>a>img {
     width: auto;
     height: 4.5em;
     transform: rotate(-18deg);
-    padding-left: 10px;
+    margin: 5px 10px;
     z-index: 8;
 }
 header>nav:nth-child(2) {
@@ -56,35 +62,37 @@ header>nav:nth-child(2)>menu>a:hover {
     text-decoration: underline;
     text-underline-position: under;
 }
-header>nav:nth-child(2)>menu>a[href="#quatrieme"] {
+header>nav:nth-child(2)>menu>a[href="#demo"] {
     background-color: var(--noir);
     color: var(--blanc);
     padding: 8px;
     border-radius: 20px;
     transition: .2s ease-in-out;
 }
-header>nav:nth-child(2)>menu>a[href="#quatrieme"]:hover {
+header>nav:nth-child(2)>menu>a[href="#demo"]:hover {
     filter: invert(2);
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1200px) {
     header>nav:nth-child(1) {
         width: 50%;
     }
     header>nav:nth-child(1)>a>img {
+        height: 3.5em;
         margin-left: 10px;
     }
     header>nav:nth-child(1)>h1 {
-        font-size: 1.5em;
+        font-size: 100%;
         margin-left: 10px;
     }
     header>nav:nth-child(2) {
         width: 50%;
     }
     header>nav:nth-child(2)>menu {
+        width: 100%;
         margin: 0;
         padding: 0;
-        justify-content: center;
+        justify-content: space-around;
     }
     header>nav:nth-child(2)>menu>a {
         margin: 3px;

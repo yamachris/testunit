@@ -20,8 +20,18 @@ header>nav:nth-child(1) {
     z-index: 7;
 }
 header>nav:nth-child(1)>h1 {
+<<<<<<< HEAD
+    font-size: 100%;
+=======
     font-size: 2.5em;
-    padding-left: 10px;
+>>>>>>> 4c3e02975519a7f1e66dcbc11fa080ff63973c95
+    margin-left: 10px;
+    z-index: 8;
+}
+header>nav:nth-child(1)>a {
+    width: auto;
+    height: 4.5em;
+    margin: 5px 10px;
     z-index: 8;
 }
 header>nav:nth-child(1)>a>img {

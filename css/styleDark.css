@@ -2,6 +2,8 @@
 
 html {
     scroll-behavior: smooth;
+    background: var(--noir);
+    color: whitesmoke;
 }
 
 body {
@@ -14,17 +16,28 @@ body {
     min-height: 100vh;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: var(--blanc);
     transition: background-color  .5s ease-out, color  .5s ease-out;
     z-index: 0;
 }
 
 header {
-    background: var(--blanc);
+    background: var(--noir);
     transition: background-color  .5s ease-out, color  .5s ease-out;
 }
 
-#colorSwitcher {
+header>nav:nth-child(2)>menu>a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--blanc);
+    z-index: 9;
+}
+
+header>nav:nth-child(2)>menu>a[href="#demo"] {
+    background-color: var(--blanc);
+    color: var(--noir);
+}
+
+#colorSwitcher.dark {
     display: block;
     position: sticky;
     align-self: flex-end;
@@ -34,7 +47,7 @@ header {
     bottom: 0;
     margin: 30px 0;
     padding: 0 10px 0 0;
-    background: var(--blanc);
+    background: var(--noir);
     border-radius: 8px 0 0 8px;
     animation: 2s ease-in colorSwitch forwards;
     z-index: 20;
@@ -68,6 +81,14 @@ main>section {
     z-index: 2;
 }
 
+section:nth-child(3)>figure {
+    background: var(--noir);
+}
+
+form {
+    background: var(--dark);
+}
+
 button {
     display: block;
     background-color: var(--blanc);
@@ -89,6 +110,10 @@ button:hover {
     border: 1px solid transparent;
     box-shadow: var(--ombre-hover);
     z-index: 6;
+}
+
+main>section>iframe {
+    background: whitesmoke;
 }
 
 @media screen and (max-width: 1500px) {

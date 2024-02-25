@@ -4,6 +4,7 @@ main>section:nth-child(3) {
     justify-content: center;
     max-width: 60vw;
     max-height: 80vh;
+    min-height: 650px;
     margin: 10vh 20vw 10vh 20vw;
     z-index: 4;
 }

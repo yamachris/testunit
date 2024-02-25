@@ -4,6 +4,7 @@ main>section:nth-child(2) {
     justify-content: center;
     max-width: 60vw;
     max-height: 70vh;
+    min-height: 650px;
     margin: 10vh 20vw 10vh 20vw;
     padding-top: 15vh;
     z-index: 4;
@@ -13,7 +14,6 @@ section:nth-child(2)>figure {
     width: 20em;
     height: auto;
     margin: 10px;
-    background: whitesmoke;
     border-radius: 25px;
     z-index: 4;
 }

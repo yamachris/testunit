@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/cards/BackBlack.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" id="currentStyleSheet">
+    <link rel="stylesheet alternate" href="css/styleDark.css" title="dark" id="dark">
     <title>Unit Card Game</title>
 </head>
-<body id="main">
+<body id="main">    
     <header>
         <nav>
-            <a href="index.html">
+            <a href="#main">
                 <img src="./img/cards/BackBlack.svg" alt="">
             </a>
             <h1>Unit Card Game</h1>
@@ -86,6 +87,8 @@
         </section>
     </main>
     <footer></footer>
-    
+
+    <i id="colorSwitcher"></i>
+    <script src="js/colorSwitcher.js"></script>
 </body>
 </html>

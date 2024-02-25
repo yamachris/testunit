@@ -5,6 +5,7 @@ section:nth-child(4) {
     justify-content: flex-start;
     max-width: 60vw;
     max-height: 60vh;
+    min-height: 650px;
     padding: 20vh 20vw 20vh 20vw;
     border-radius: 20px;
     z-index: 5;
@@ -19,10 +20,9 @@ form {
     height: 80%;
     padding: 60px 120px 80px 120px;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 30px;
     background: whitesmoke;
-    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--ombre);
 }
 
 label {
@@ -39,7 +39,7 @@ label>input {
     margin: .4em;
     border: 2px solid whitesmoke;
     border-radius: 20px;
-    box-shadow: 1px 1px 3px hsla(0, 0%, 0%, .5);
+    box-shadow: var(--ombre);
 }
 
 form>button {

@@ -1,0 +1,23 @@
+
+@keyframes colorSwitch {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes button {
+    from {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(1.2);
+    }
+
+    to {
+        filter: brightness(1);
+    }
+}

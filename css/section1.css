@@ -5,6 +5,7 @@ section:nth-child(1) {
     justify-content: flex-start;
     max-width: 60vw;
     max-height: 60vh;
+    min-height: 650px;
     padding: 10vh 20vw 20vh 20vw;
     border-radius: 20px;
     z-index: 5;
@@ -18,27 +19,6 @@ section:nth-child(1)>img {
 }
 section:nth-child(1)>a {
     text-decoration: none;
-}
-button {
-    display: block;
-    background-color: var(--blanc);
-    font-size: large;
-    font-weight: bold;
-    border: 1px solid black;
-    border-radius: 50px;
-    margin-top: 10vh;
-    padding: 20px 50px;
-    box-shadow: var(--ombre);
-    animation: 1s ease-in-out button infinite;
-    z-index: 6;
-}
-button:hover {
-    display: block;
-    background-color: var(--noir);
-    color: var(--blanc);
-    border: 1px solid black;
-    box-shadow: var(--ombre-hover);
-    z-index: 6;
 }
 
 @media screen and (max-width: 850px) {

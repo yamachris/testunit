@@ -114,6 +114,20 @@ main>section>iframe {
     background: whitesmoke;
 }
 
+section:nth-child(6)>menu>.nav-selected {
+    color: whitesmoke;
+    border-bottom: 5px solid whitesmoke;
+}
+
+table {
+    background: var(--noir);
+}
+
+th {
+    background: var(--dark);
+    filter: invert(0);
+}
+
 @media screen and (max-width: 1500px) {
     main>section {
         height: auto;

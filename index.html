@@ -21,6 +21,7 @@
                 <a href="#demo">Demo</a>
                 <a href="#rules">Rules</a>
                 <a href="#store">Store</a>
+                <a href="#rank" id="allTime">Rank</a>
                 <a href="#login">Login</a>
             </menu>
         </nav>
@@ -85,10 +86,31 @@
         <section id="demo">
             <iframe src="https://n0r3f.github.io/UnitMiniProjet/" frameborder="0"></iframe>
         </section>
+        <section id="rank">
+            <menu>
+                <nav id="allTime">All time</nav>
+                <nav id="thisMonth">This month</nav>
+                <nav id="lastMonth">Last month</nav>
+                <nav id="thisWeek">This week</nav>
+                <nav id="lastWeek">Last week</nav>
+            </menu>
+            <hr>
+            <table id="playerTable">
+                <tr>
+                    <th>Rank</th>
+                    <th>Player</th>
+                    <th>Win Rate</th>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Elo</th>
+                    <th>Steak</th>
+                </tr>
+            </table>        
+        </section>
     </main>
     <footer></footer>
-
     <i id="colorSwitcher"></i>
     <script src="js/colorSwitcher.js"></script>
+    <script src="js/displayPlayersRanking.js"></script>
 </body>
 </html>

@@ -28,7 +28,6 @@ header>nav:nth-child(1) {
 }
 
 header>nav:nth-child(1)>h1 {
-    font-size: 100%;
     font-size: 2.5em;
     margin-left: 10px;
     z-index: 8;
@@ -96,6 +95,7 @@ header>nav:nth-child(2)>menu>a[href="#demo"]:hover {
         height: auto;
         padding: 10px 0;
     }
+
     header>nav:nth-child(1) {
         width: 50%;
     }
@@ -124,5 +124,22 @@ header>nav:nth-child(2)>menu>a[href="#demo"]:hover {
     header>nav:nth-child(2)>menu>a {
         font-size: 80%;
         margin: 3px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header>nav:nth-child(1) {
+        width: 10%;
+    }
+
+    header>nav:nth-child(1)>h1 {
+        font-size: 0;
+        margin: 0;
+    }
+
+    header>nav:nth-child(2) {
+        width: 80%;
+        max-height: 100%;
+        z-index: 7;
     }
 }

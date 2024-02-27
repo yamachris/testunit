@@ -118,7 +118,7 @@ button:hover {
 }
 
 main>section>iframe {
-    background: whitesmoke;
+    background: transparent;
 }
 
 section:nth-child(6)>menu>.nav-selected {

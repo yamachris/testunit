@@ -11,7 +11,7 @@ main>section>iframe {
     width: 44%;
     height: 90vh;
     border-radius: 50px;
-    background: var(--blanc);
+    background: transparent;
 }
 
 @media screen and (max-width: 950px) {

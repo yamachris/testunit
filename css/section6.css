@@ -4,7 +4,6 @@ section:nth-child(6) {
     align-items: center;
     justify-content: flex-start;
     min-height: 650px;
-    margin-top: 1em;
 }
 
 section:nth-child(6)>menu {
@@ -14,6 +13,7 @@ section:nth-child(6)>menu {
     justify-content: flex-start;
     width: 60%;
     height: 1em;
+    margin-top: 50px;
     font-size: 1em;
     font-weight: bolder;
 }

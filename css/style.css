@@ -24,6 +24,10 @@ header {
     transition: background-color  1s ease-out, color  1s ease-out;
 }
 
+header>menu>a>img {
+    filter: none;
+}
+
 #colorSwitcher {
     display: block;
     position: sticky;

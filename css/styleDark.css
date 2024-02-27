@@ -37,6 +37,13 @@ header>nav:nth-child(2)>menu>a[href="#demo"] {
     color: var(--noir);
 }
 
+header>nav>menu>a>img {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background: var(--blanc);
+}
+
 #colorSwitcher.dark {
     display: block;
     position: sticky;

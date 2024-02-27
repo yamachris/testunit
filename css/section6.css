@@ -43,6 +43,11 @@ section:nth-child(6)>menu>.nav-selected {
     z-index: 3;
 }
 
+nav:hover,
+.nav-selected:hover {
+    cursor: pointer;
+}
+
 hr {
     width: 57%;
     height: 1px;
@@ -94,4 +99,54 @@ tr {
 td {
     text-align: center;
     font-weight: bold;
+}
+
+@media screen and (max-width: 1500px) {
+    table {
+        width: 70%;
+        height: 70%;
+    }
+    section:nth-child(6)>menu {
+        width: 70%;
+    }
+    
+    section:nth-child(6)>menu>nav {
+        width: 8em;
+    }
+    
+    section:nth-child(6)>menu>.nav-selected {
+        width: 8em;
+    }
+    
+    hr {
+        width: 67%;
+    }
+    tr {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    table {
+        width: 80%;
+        height: 70%;
+    }
+    section:nth-child(6)>menu {
+        width: 80%;
+    }
+    
+    section:nth-child(6)>menu>nav {
+        width: 7em;
+    }
+    
+    section:nth-child(6)>menu>.nav-selected {
+        width: 7em;
+    }
+    
+    hr {
+        width: 77%;
+    }
+    tr {
+        height: 50px;
+    }
 }

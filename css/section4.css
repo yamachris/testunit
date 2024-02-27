@@ -44,11 +44,34 @@ label>input {
 
 form>button {
     margin-top: 30px;
+    color: var(--noir);
 }
 
 @media screen and (max-width: 1600px) {
     section:nth-child(4) {
         min-height: 100vh;
         padding: 12vh 20vw 20vh 20vw;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    section:nth-child(4) {
+        min-height: 80vh;
+        padding: 10vh 20vw 10vh 20vw;
+    }
+
+    form {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-around;
+        width: 30%;
+        height: 70%;
+        padding: 20px 120px 40px 120px;
+        margin-top: 5vh;
+        text-align: center;
+        border-radius: 30px;
+        background: whitesmoke;
+        box-shadow: var(--ombre);
     }
 }

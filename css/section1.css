@@ -24,7 +24,7 @@ section:nth-child(1)>a {
 @media screen and (max-width: 850px) {
     section:nth-child(1) {
         min-width: 100vw;
-        margin-top: 10vh;
+        margin-top: 5vh;
         padding: 0;
     }
     section:nth-child(1)>img {

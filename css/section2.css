@@ -37,9 +37,13 @@ section:nth-child(2)>figure>img {
 }
 
 @media screen and (max-width: 950px) {
-    main>section:nth-child(2) {
-        min-width: 80vw;
-        min-height: 100vh;
+    main>section:nth-child(2) { 
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        min-width: 100vw;
+        min-height: 80vh;
+        overflow: scroll;
         gap: 10px;
     }
     section:nth-child(2)>figure,

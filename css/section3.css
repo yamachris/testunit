@@ -45,15 +45,22 @@ section:nth-child(3)>figure>figcaption {
 }
 
 @media screen and (max-width: 950px) {
-    main>section:nth-child(3) {
+    main>section:nth-child(3) { 
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
         min-width: 100vw;
         min-height: 100vh;
-        margin: 20vh 5vh;
     }
     section:nth-child(3)>figure {
-        width: 14em;
+        width: 12em;
+        margin: 0;
+        padding: 0;
     }
     section:nth-child(3)>figure>img {
         width: 4em;
+    }
+    section:nth-child(3)>figcaption {
+        font-size: .8em;
     }
 }

@@ -101,6 +101,11 @@ td {
     font-weight: bold;
 }
 
+td>img {
+    width: 2em;
+    height: 2em;
+}
+
 @media screen and (max-width: 1500px) {
     table {
         width: 70%;

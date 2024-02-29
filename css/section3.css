@@ -73,6 +73,7 @@ section:nth-child(3)>figure>figcaption {
     width: 60%;
     text-align: start;
     text-wrap: balance;
+    color: var(--blanc);
     font-size: 1.4em;
 }
 

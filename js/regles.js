@@ -32,20 +32,20 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentRulesIndex = 0;
 
     function showLightboxRules(index) {
-        const existingLightbox = document.querySelector('.lightbox-rules');
-        if (existingLightbox) {
-            document.body.removeChild(existingLightbox);
+        const existingLightboxRules = document.querySelector('.lightbox-rules');
+        if (existingLightboxRules) {
+            document.body.removeChild(existingLightboxRules);
         }
-        const lightbox = document.createElement('div');
-        lightbox.classList.add('lightbox-rules');
-        const lightboxContent = document.createElement('div');
-        lightboxContent.classList.add('lightbox-rules-content');
+        const lightboxRules = document.createElement('div');
+        lightboxRules.classList.add('lightbox-rules');
+        const lightboxRulesContent = document.createElement('div');
+        lightboxRulesContent.classList.add('lightbox-rules-content');
 
         const closeBtn = document.createElement('button');
-        closeBtn.textContent = 'Fermer';
-        closeBtn.classList.add('close-btn');
+        closeBtn.textContent = 'X';
+        closeBtn.classList.add('close-rules-btn');
         closeBtn.onclick = function () {
-            document.body.removeChild(lightbox);
+            document.body.removeChild(lightboxRules);
         };
 
         const arrowLeftRules = document.createElement('button');
@@ -73,23 +73,23 @@ document.addEventListener('DOMContentLoaded', function () {
         infoDiv.classList.add('rules-info');
         infoDiv.innerHTML = `<h2>${rulesInfo.nom}</h2><p>${rulesInfo.description}</p>`;
 
-        lightboxContent.appendChild(arrowLeftRules);
-        lightboxContent.appendChild(img);
-        lightboxContent.appendChild(infoDiv);
-        lightboxContent.appendChild(arrowRightRules);
-        lightbox.appendChild(closeBtn);
-        lightbox.appendChild(lightboxContent);
-        document.body.appendChild(lightbox);
+        lightboxRulesContent.appendChild(arrowLeftRules);
+        lightboxRulesContent.appendChild(img);
+        lightboxRulesContent.appendChild(infoDiv);
+        lightboxRulesContent.appendChild(arrowRightRules);
+        lightboxRules.appendChild(closeBtn);
+        lightboxRules.appendChild(lightboxRulesContent);
+        document.body.appendChild(lightboxRules);
     }
 
     document.addEventListener('keydown', function (event) {
         if (event.key === 'Escape') {
-            const lightbox = document.querySelector('.lightbox-rules');
-            if (lightbox) {
-                document.body.removeChild(lightbox);
+            const lightboxRules = document.querySelector('.lightbox-rules');
+            if (lightboxRules) {
+                document.body.removeChild(lightboxRules);
             }
         }
-        
+
         const lightboxProducts = document.querySelector('.lightbox-products');
         const lightboxRules = document.querySelector('.lightbox-rules');
         

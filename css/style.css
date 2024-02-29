@@ -24,6 +24,10 @@ header {
     transition: background-color  1s ease-out, color  1s ease-out;
 }
 
+header>nav:nth-child(1)>a>h1 {
+    color: var(--noir);
+}
+
 header>menu>a>img {
     filter: none;
 }
@@ -78,7 +82,7 @@ button {
     border: 1px solid transparent;
     border-radius: 50px;
     margin-top: 10vh;
-    padding: 20px 50px;
+    padding: 10px 30px;
     box-shadow: var(--ombre);
     animation: 5s ease-in-out button infinite;
     z-index: 6;
@@ -91,11 +95,6 @@ button:hover {
     border: 1px solid transparent;
     box-shadow: var(--ombre-hover);
     z-index: 6;
-}
-
-.lightbox-content .product-info {
-    text-align: center;
-    color: var(--blanc);
 }
 
 @media screen and (max-width: 1500px) {

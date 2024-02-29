@@ -42,15 +42,15 @@ document.addEventListener('DOMContentLoaded', function () {
         lightboxProductsContent.classList.add('lightbox-products-content');
 
         const closeBtn = document.createElement('button');
-        closeBtn.textContent = 'Fermer';
-        closeBtn.classList.add('close-btn');
+        closeBtn.textContent = 'X';
+        closeBtn.classList.add('close-products-btn');
         closeBtn.onclick = function () {
             document.body.removeChild(lightboxProducts);
         };
 
         const arrowLeft = document.createElement('button');
         arrowLeft.textContent = '<';
-        arrowLeft.classList.add('arrow-btn', 'left');
+        arrowLeft.classList.add('arrow-products-btn', 'left');
         arrowLeft.onclick = function () {
             currentProductIndex--;
             if (currentProductIndex < 0) currentProductIndex = images.length - 1;
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const arrowRight = document.createElement('button');
         arrowRight.textContent = '>';
-        arrowRight.classList.add('arrow-btn', 'right');
+        arrowRight.classList.add('arrow-products-btn', 'right');
         arrowRight.onclick = function () {
             currentProductIndex++;
             if (currentProductIndex >= images.length) currentProductIndex = 0;

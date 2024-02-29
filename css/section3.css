@@ -77,7 +77,7 @@ section:nth-child(3)>figure>figcaption {
 }
 
 .lightbox-rules-content>.close-btn,
-.lightbox-rules-content>.arrow-btn {
+.lightbox-rules-content>.arrow-rules-btn {
     cursor: pointer;
     padding: 10px;
     color: var(--blanc);
@@ -85,18 +85,18 @@ section:nth-child(3)>figure>figcaption {
     background-color: var(--noir);
 }
 
-.lightbox-rules-content>.arrow-btn {
+.lightbox-rules-content>.arrow-rules-btn {
     position: absolute;
     top: 58%;
     font-size: 2em;
     transform: translateY(-50%);
 }
 
-.lightbox-rules-content>.arrow-btn.left {
+.lightbox-rules-content>.arrow-rules-btn.left {
     left: 10%;
 }
 
-.lightbox-rules-content>.arrow-btn.right {
+.lightbox-rules-content>.arrow-rules-btn.right {
     right: 10%;
 }
 
@@ -164,7 +164,7 @@ section:nth-child(3)>figure>figcaption {
         font-size: 1em;
     }
 
-    .lightbox-rules-content>.arrow-btn {
+    .lightbox-rules-content>.arrow-rules-btn {
         position: absolute;
         top: 86vh;
         font-size: 2em;

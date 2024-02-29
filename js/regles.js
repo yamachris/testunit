@@ -36,31 +36,31 @@ function showLightbox(index) {
         if (existingLightbox) {
             document.body.removeChild(existingLightbox);
         }
-        const lightboxRules = document.createElement('div');
-        lightboxRules.classList.add('lightbox-rules');
-        const lightboxRulesContent = document.createElement('div');
-        lightboxRulesContent.classList.add('lightbox-rules-content');
+        const lightbox = document.createElement('div');
+        lightbox.classList.add('lightbox-rules');
+        const lightboxContent = document.createElement('div');
+        lightboxContent.classList.add('lightbox-rules-content');
 
         const closeBtn = document.createElement('button');
         closeBtn.textContent = 'Fermer';
         closeBtn.classList.add('close-btn');
         closeBtn.onclick = function () {
-            document.body.removeChild(lightboxRules);
+            document.body.removeChild(lightbox);
         };
 
-        const arrowLeft = document.createElement('button');
-        arrowLeft.textContent = '<';
-        arrowLeft.classList.add('arrow-btn', 'left');
-        arrowLeft.onclick = function () {
+        const arrowLeftRules = document.createElement('button');
+        arrowLeftRules.textContent = '<';
+        arrowLeftRules.classList.add('arrow-rules-btn', 'left');
+        arrowLeftRules.onclick = function () {
             currentRulesIndex--;
             if (currentRulesIndex < 0) currentRulesIndex = images.length - 1;
             showLightbox(currentRulesIndex);
         };
 
-        const arrowRight = document.createElement('button');
-        arrowRight.textContent = '>';
-        arrowRight.classList.add('arrow-btn', 'right');
-        arrowRight.onclick = function () {
+        const arrowRightRules = document.createElement('button');
+        arrowRightRules.textContent = '>';
+        arrowRightRules.classList.add('arrow-rules-btn', 'right');
+        arrowRightRules.onclick = function () {
             currentRulesIndex++;
             if (currentRulesIndex >= images.length) currentRulesIndex = 0;
             showLightbox(currentRulesIndex);
@@ -73,20 +73,20 @@ function showLightbox(index) {
         infoDiv.classList.add('rules-info');
         infoDiv.innerHTML = `<h2>${rulesInfo.nom}</h2><p>${rulesInfo.description}</p>`;
 
-        lightboxRulesContent.appendChild(arrowLeft);
-        lightboxRulesContent.appendChild(img);
-        lightboxRulesContent.appendChild(infoDiv);
-        lightboxRulesContent.appendChild(arrowRight);
-        lightboxRules.appendChild(closeBtn);
-        lightboxRules.appendChild(lightboxRulesContent);
-        document.body.appendChild(lightboxRules);
+        lightboxContent.appendChild(arrowLeftRules);
+        lightboxContent.appendChild(img);
+        lightboxContent.appendChild(infoDiv);
+        lightboxContent.appendChild(arrowRightRules);
+        lightbox.appendChild(closeBtn);
+        lightbox.appendChild(lightboxContent);
+        document.body.appendChild(lightbox);
     }
 
     document.addEventListener('keydown', function (event) {
         if (event.key === 'Escape') { 
-            const lightboxRules = document.querySelector('.lightbox-rules');
+            const lightbox = document.querySelector('x.lightbox-rules');
             if (lightbox) {
-                document.body.removeChild(lightboxRules);
+                document.body.removeChild(lightbox);
             }
         } else {
             switch (event.key) {

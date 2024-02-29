@@ -57,6 +57,7 @@ section:nth-child(2)>figure>img {
 
 .lightbox-products-content>.product-info {
     text-align: center;
+    color: var(--blanc);
 }
 
 .lightbox-products-content>.close-btn,

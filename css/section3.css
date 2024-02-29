@@ -2,19 +2,20 @@ main>section:nth-child(3) {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    max-width: 60vw;
+    max-width: 70vw;
     max-height: 80vh;
     min-height: 650px;
     margin: 10vh 20vw 10vh 20vw;
     z-index: 4;
 }
+
 section:nth-child(3)>figure {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
     gap: 1em;
-    width: 18em;
+    width: 20em;
     height: auto;
     margin: 10px;
     padding: 20px;
@@ -22,45 +23,151 @@ section:nth-child(3)>figure {
     background: whitesmoke;
     z-index: 4;
 }
+
 section:nth-child(3)>figure>img {
     width: 8em;
     height: auto;
 }
+
 section:nth-child(3)>figure>figcaption {
     font-size: 1em;
     font-weight: bold;
     z-index: 4;
 }
 
+.lightbox-rules {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: var(--lightbox);
+    z-index: 9999;
+}
+
+.lightbox-rules-content {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 4%;
+    width: 60%;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid var(--ombre);
+    background-color: var(--lightbox);
+}
+
+.lightbox-rules-content>img {
+    width: 40%;
+    max-width: 200px;
+    margin-top: 10vh;
+}
+
+.lightbox-rules-content>.rules-info {
+    width: 60%;
+    text-align: start;
+    text-wrap: balance;
+    font-size: 1.4em;
+}
+
+.lightbox-rules-content>.close-btn,
+.lightbox-rules-content>.arrow-btn {
+    cursor: pointer;
+    padding: 10px;
+    color: var(--blanc);
+    border: 1px solid var(--noir);
+    background-color: var(--noir);
+}
+
+.lightbox-rules-content>.arrow-btn {
+    position: absolute;
+    top: 58%;
+    font-size: 2em;
+    transform: translateY(-50%);
+}
+
+.lightbox-rules-content>.arrow-btn.left {
+    left: 10%;
+}
+
+.lightbox-rules-content>.arrow-btn.right {
+    right: 10%;
+}
+
 @media screen and (max-width: 1600px) {
     main>section:nth-child(3) {
         height: auto;
     }
+
     section:nth-child(3)>figure {
         width: 16em;
     }
+
     section:nth-child(3)>figure>img {
         width: 6em;
     }
 }
 
 @media screen and (max-width: 950px) {
-    main>section:nth-child(3) { 
+    main>section:nth-child(3) {
         flex-flow: row wrap;
         align-items: center;
         justify-content: space-around;
         min-width: 100vw;
         min-height: 100vh;
     }
+
     section:nth-child(3)>figure {
         width: 12em;
         margin: 0;
         padding: 0;
     }
+
     section:nth-child(3)>figure>img {
         width: 4em;
     }
+
     section:nth-child(3)>figcaption {
         font-size: .8em;
+    }
+
+    .lightbox-rules {
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .lightbox-rules-content {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2%;
+        width: 80%;
+        height: 70vh;
+    }
+
+    .lightbox-rules-content>.rules-info {
+        width: 80%;
+        text-align: center;
+        text-wrap: balance;
+        font-size: 1em;
+    }
+
+    .lightbox-rules-content>.arrow-btn {
+        position: absolute;
+        top: 86vh;
+        font-size: 2em;
+        transform: translateY(-50%);
     }
 }

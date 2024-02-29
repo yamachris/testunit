@@ -87,7 +87,7 @@
 .lightbox-rules-content {
     display: flex;
     flex-flow: row nowrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
     gap: 4%;
     width: 60%;

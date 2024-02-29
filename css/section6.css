@@ -134,23 +134,26 @@ td>img {
 
 @media screen and (max-width: 985px) {
     table {
-        width: 80%;
+        width: 98%;
         height: 70%;
     }
     section:nth-child(6)>menu {
-        width: 80%;
+        width: 90vw;
     }
     
-    section:nth-child(6)>menu>nav {
-        width: 7em;
-    }
-    
+    section:nth-child(6)>menu>nav,
     section:nth-child(6)>menu>.nav-selected {
-        width: 7em;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: auto;
+        margin: 0 5% 1% 0;
+        text-align: center;
+        font-size: 100%;
     }
     
     hr {
-        width: 77%;
+        width: 98%;
     }
     tr {
         height: 50px;

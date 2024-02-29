@@ -2,8 +2,20 @@
 
 html {
     scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     background: var(--noir);
     color: whitesmoke;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    animation: 6s ease-out body forwards;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -54,16 +66,18 @@ header>nav>menu>a>img {
     bottom: 0;
     padding: 0 10px 10px 0;
     border-radius: 8px 0 0 8px;
-    animation: 2s ease-in colorSwitch forwards;
+    animation: 1s ease-in colorSwitch forwards;
     z-index: 20;
 }
 
 #colorSwitcher.dark::before {
     content: url(../img/main/sun.png);
+    filter: brightness(9);
 }
 
 #colorSwitcher::before {
     content: url(../img/main/moon.png);
+    filter: brightness(9);
 }
 
 main {

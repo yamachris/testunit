@@ -1,8 +1,18 @@
+@keyframes body {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
 
 @keyframes colorSwitch {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 100%;
     }

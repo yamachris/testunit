@@ -1,23 +1,3 @@
-function loadJSON(data) {
-    var table = document.getElementById('playerTable');
-    while (table.rows.length > 1) {
-        table.deleteRow(1);
-    }
-    data.forEach(function (player) {
-        var tr = document.createElement('tr');
-        var fileName = player.Player.split('\\').pop().split('/').pop();
-        var fileNameWithoutExtension = fileName.substring(0, fileName.lastIndexOf('.'));
-        tr.innerHTML = '<td>' + player.Rank + '</td>' +
-            '<td><img src="' + player.Player + '" alt="avatar du joueur" title="' + fileNameWithoutExtension + '"></td>' +
-            '<td>' + player.Win_Rate + '</td>' +
-            '<td>' + player.Wins + '</td>' +
-            '<td>' + player.Losses + '</td>' +
-            '<td>' + player.Elo + '</td>' +
-            '<td>' + player.Steak + '</td>';
-        table.appendChild(tr);
-    });
-}
-
 // Gestion des datas relatifs aux tableaux
 
 var data = {
@@ -391,13 +371,34 @@ var data = {
             "Steak": -4
         }
     ]
-};
+};   
 
-// Fonction pour gérer le clic sur les éléments de navigation
+function loadJSON(data) {
+    var table = document.getElementById('playerTable');
+    while (table.rows.length > 1) {
+        table.deleteRow(1);
+    }
+    data.forEach(function (player) {
+        var tr = document.createElement('tr');
+        var fileName = player.Player.split('\\').pop().split('/').pop();
+        var fileNameWithoutExtension = fileName.substring(0, fileName.lastIndexOf('.'));
+        tr.innerHTML = '<td>' + player.Rank + '</td>' +
+            '<td><img src="' + player.Player + '" alt="avatar du joueur" title="' + fileNameWithoutExtension + '"></td>' +
+            '<td>' + player.Win_Rate + '</td>' +
+            '<td>' + player.Wins + '</td>' +
+            '<td>' + player.Losses + '</td>' +
+            '<td>' + player.Elo + '</td>' +
+            '<td>' + player.Steak + '</td>';
+        table.appendChild(tr);
+    });
+}
+
+// Gestion des datas relatifs aux tableaux
 function handleNavClick(event) {
     document.querySelectorAll('nav').forEach(nav => nav.classList.remove('nav-selected'));
     event.target.classList.add('nav-selected');
     var navId = event.target.id;
+    // Assurez-vous que 'data' est défini et contient les données attendues
     loadJSON(data[navId]); // Charger les données correspondantes
 }
 

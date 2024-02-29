@@ -4,6 +4,7 @@
     --dark: hsl(248, 16%, 18%);
     --blanc: hsl(0, 0%, 96%);
     --rouge: hsl(350, 85%, 42%);
+    --lightbox: hsla(0, 0%, 0%, .9);
     --ombre: 1px 1px 4px hsla(0, 0%, 0%, .8);
     --ombre-hover: 4px 4px 16px hsla(0, 0%, 0%, .6);
 }

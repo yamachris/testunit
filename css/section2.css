@@ -25,6 +25,63 @@ section:nth-child(2)>figure>img {
     border-radius: 25px;
 }
 
+.lightbox {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--lightbox);
+}
+
+.lightbox-content {
+    background-color: var(--lightbox);
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid var(--ombre);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lightbox-content img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.lightbox-content .product-info {
+    text-align: center;
+}
+
+.lightbox-content .close-btn,
+.lightbox-content .arrow-btn {
+    cursor: pointer;
+    padding: 10px;
+    color: var(--blanc);
+    background-color: var(--noir);
+    border: 1px solid var(--noir);
+}
+
+.lightbox-content .arrow-btn {
+    position: absolute;
+    top: 58%;
+    font-size: 2em;
+    transform: translateY(-50%);
+}
+
+.lightbox-content .arrow-btn.left {
+    left: 10%;
+}
+
+.lightbox-content .arrow-btn.right {
+    right: 10%;
+}
+
+
 @media screen and (max-width: 1700px) {
     main>section:nth-child(2) {
         height: auto;

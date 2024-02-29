@@ -93,6 +93,11 @@ button:hover {
     z-index: 6;
 }
 
+.lightbox-content .product-info {
+    text-align: center;
+    color: var(--blanc);
+}
+
 @media screen and (max-width: 1500px) {
     main>section {
         height: auto;

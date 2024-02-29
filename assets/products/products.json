@@ -1,0 +1,26 @@
+{
+    "10_de_carreau_x2": {
+        "nom": "10 de Carreau",
+        "description": "Le 10 de Carreau est un jeu de cartes de qualité supérieure."
+    },
+    "7_de_coeur_x2": {
+        "nom": "7 de Coeur",
+        "description": "Le 7 de Coeur est un jeu de cartes de qualité supérieure."
+    },
+    "Reine_de_pique_x2": {
+        "nom": "Reine de pique",
+        "description": "Le 7 de Coeur est un jeu de cartes de qualité supérieure."
+    },
+    "Joker_noir_x2": {
+        "nom": "Joker noir",
+        "description": "Le 7 de Coeur est un jeu de cartes de qualité supérieure."
+    },
+    "Reine_de_carreau_x2": {
+        "nom": "Reine de carreau",
+        "description": "Le 7 de Coeur est un jeu de cartes de qualité supérieure."
+    },
+    "Roi_de_trefle_x2": {
+        "nom": "Roi de trèfle",
+        "description": "Le 7 de Coeur est un jeu de cartes de qualité supérieure."
+    }
+}

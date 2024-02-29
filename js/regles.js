@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let currentRulesIndex = 0;
 
-function showLightbox(index) {
+    function showLightboxRules(index) {
         const existingLightbox = document.querySelector('.lightbox-rules');
         if (existingLightbox) {
             document.body.removeChild(existingLightbox);
@@ -54,7 +54,7 @@ function showLightbox(index) {
         arrowLeftRules.onclick = function () {
             currentRulesIndex--;
             if (currentRulesIndex < 0) currentRulesIndex = images.length - 1;
-            showLightbox(currentRulesIndex);
+            showLightboxRules(currentRulesIndex);
         };
 
         const arrowRightRules = document.createElement('button');
@@ -63,7 +63,7 @@ function showLightbox(index) {
         arrowRightRules.onclick = function () {
             currentRulesIndex++;
             if (currentRulesIndex >= images.length) currentRulesIndex = 0;
-            showLightbox(currentRulesIndex);
+            showLightboxRules(currentRulesIndex);
         };
 
         const img = document.createElement('img');
@@ -83,31 +83,47 @@ function showLightbox(index) {
     }
 
     document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape') { 
-            const lightbox = document.querySelector('x.lightbox-rules');
+        if (event.key === 'Escape') {
+            const lightbox = document.querySelector('.lightbox-rules');
             if (lightbox) {
                 document.body.removeChild(lightbox);
             }
-        } else {
+        }
+        
+        const lightboxProducts = document.querySelector('.lightbox-products');
+        const lightboxRules = document.querySelector('.lightbox-rules');
+        
+        if (lightboxProducts || lightboxRules) {
             switch (event.key) {
                 case 'ArrowLeft':
-                    currentRulesIndex--;
+                    if (lightboxProducts) {
+                        currentProductIndex--;
+                        if (currentProductIndex < 0) currentProductIndex = images.length - 1;
+                        showLightboxProducts(currentProductIndex);
+                    } else if (lightboxRules) {
+                        currentRulesIndex--;
                     if (currentRulesIndex < 0) currentRulesIndex = images.length - 1;
-                    showLightbox(currentRulesIndex);
+                    showLightboxRules(currentRulesIndex);
+                    }
                     break;
                 case 'ArrowRight':
-                    currentRulesIndex++;
-                    if (currentRulesIndex >= images.length) currentRulesIndex = 0;
-                    showLightbox(currentRulesIndex);
+                    if (lightboxProducts) {
+                        currentProductIndex++;
+                        if (currentProductIndex >= images.length) currentProductIndex = 0;
+                        showLightboxProducts(currentProductIndex);
+                    } else if (lightboxRules) {
+                        currentRulesIndex++;
+                        if (currentRulesIndex >= images.length) currentRulesIndex = 0;
+                        showLightboxRules(currentRulesIndex);
+                    }
                     break;
             }
         }
     });
 
-
     imagesArray.forEach((img, index) => {
         img.addEventListener('click', function () {
-            showLightbox(index);
+            showLightboxRules(index);
         });
     });
 });

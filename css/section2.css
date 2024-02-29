@@ -27,7 +27,7 @@ section:nth-child(2)>figure>img {
     border-radius: 25px;
 }
 
-.lightbox {
+.lightbox-products {
     display: block;
     position: fixed;
     width: 100%;
@@ -39,7 +39,7 @@ section:nth-child(2)>figure>img {
     z-index: 9999;
 }
 
-.lightbox-content {
+.lightbox-products-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,17 +50,17 @@ section:nth-child(2)>figure>img {
     background-color: var(--lightbox);
 }
 
-.lightbox-content>img {
+.lightbox-products-content>img {
     width: 100%;
     max-width: 500px;
 }
 
-.lightbox-content>.product-info {
+.lightbox-products-content>.product-info {
     text-align: center;
 }
 
-.lightbox-content>.close-btn,
-.lightbox-content>.arrow-btn {
+.lightbox-products-content>.close-btn,
+.lightbox-products-content>.arrow-btn {
     cursor: pointer;
     padding: 10px;
     color: var(--blanc);
@@ -68,18 +68,18 @@ section:nth-child(2)>figure>img {
     background-color: var(--noir);
 }
 
-.lightbox-content>.arrow-btn {
+.lightbox-products-content>.arrow-btn {
     position: absolute;
     top: 58%;
     font-size: 2em;
     transform: translateY(-50%);
 }
 
-.lightbox-content>.arrow-btn.left {
+.lightbox-products-content>.arrow-btn.left {
     left: 10%;
 }
 
-.lightbox-content>.arrow-btn.right {
+.lightbox-products-content>.arrow-btn.right {
     right: 10%;
 }
 

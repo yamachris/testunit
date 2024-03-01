@@ -72,12 +72,12 @@ header>nav>menu>a>img {
 
 #colorSwitcher.dark::before {
     content: url(../img/main/sun.png);
-    filter: brightness(9);
+    filter: contrast(0) brightness(2);
 }
 
 #colorSwitcher::before {
     content: url(../img/main/moon.png);
-    filter: brightness(9);
+    filter: contrast(0) brightness(2);
 }
 
 main {

@@ -160,4 +160,17 @@ form>button {
         background: whitesmoke;
         box-shadow: none;
     }
+
+    label>input {
+        min-width: 90%;
+        height: 1.2em;
+        padding: .8em .6em .8em .8em;
+        margin: .3em;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        box-shadow: 22px 22px 44px #bebebe,
+            -22px -22px 44px #ffffff;
+        border: 2px solid whitesmoke;
+        border-radius: 20px;
+        box-shadow: var(--ombre);
+    }
 }

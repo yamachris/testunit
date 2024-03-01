@@ -61,12 +61,12 @@ section:nth-child(2)>figure>img {
         align-items: center;
         justify-content: center;
         min-width: 100vw;
-        min-height: 70vh;
+        min-height: 65vh;
         gap: 10px;
     }
 
     section:nth-child(2)>figure,
     section:nth-child(2)>figure>img {
-        width: 10em;
+        width: 8em;
     }
 }

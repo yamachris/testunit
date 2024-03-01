@@ -62,6 +62,7 @@ section:nth-child(2)>figure>img {
         justify-content: center;
         min-width: 100vw;
         min-height: 65vh;
+        margin-top: 2vh;
         gap: 10px;
     }
 

@@ -81,12 +81,11 @@ section:nth-child(3)>figure>figcaption {
         justify-content: space-around;
         min-width: 100vw;
         min-height: 70vh;
-        margin-top: 20px;
     }
 
     section:nth-child(3)>figure {
         width: 10em;
-        margin: 5px;
+        margin-top: 10vh;
         padding: 0;
     }
 

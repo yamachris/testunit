@@ -46,7 +46,22 @@ section:nth-child(2)>figure>img {
         justify-content: center;
         min-width: 100vw;
         min-height: 80vh;
-        overflow: scroll;
+        gap: 10px;
+    }
+
+    section:nth-child(2)>figure,
+    section:nth-child(2)>figure>img {
+        width: 10em;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    main>section:nth-child(2) {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        min-width: 100vw;
+        min-height: 70vh;
         gap: 10px;
     }
 

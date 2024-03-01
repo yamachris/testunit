@@ -69,7 +69,32 @@ section:nth-child(3)>figure>figcaption {
         width: 4em;
     }
 
-    section:nth-child(3)>figcaption {
+    section:nth-child(3)>figure>figcaption {
         font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    main>section:nth-child(3) {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+        min-width: 100vw;
+        min-height: 75vh;
+        margin: 0;
+    }
+
+    section:nth-child(3)>figure {
+        width: 10em;
+        margin: 10px;
+        padding: 0;
+    }
+
+    section:nth-child(3)>figure>img {
+        width: 4em;
+    }
+
+    section:nth-child(3)>figure>figcaption {
+        font-size: .6em;
     }
 }

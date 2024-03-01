@@ -159,3 +159,31 @@ td>img {
         height: 60px;
     }
 }
+
+@media screen and (max-width: 380px) {
+    table {
+        width: 98%;
+        height: 70vh;
+    }
+    section:nth-child(6)>menu {
+        width: 90vw;
+    }
+    
+    section:nth-child(6)>menu>nav,
+    section:nth-child(6)>menu>.nav-selected {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: auto;
+        margin: 0 5% 1% 0;
+        text-align: center;
+        font-size: 100%;
+    }
+    
+    hr {
+        width: 98%;
+    }
+    tr {
+        height: 60px;
+    }
+}

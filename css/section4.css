@@ -129,3 +129,35 @@ form>button {
         box-shadow: none;
     }
 }
+
+@media screen and (max-width: 380px) {
+
+    section:nth-child(4):before {
+        content: "";
+        font-size: 0;
+        width: 100%;
+        margin-top: 30vh;
+        z-index: -1;
+    }
+
+    section:nth-child(4) {
+        min-height: 80vh;
+        padding: 10vh 20vw 10vh 20vw;
+    }
+
+    form {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-around;
+        width: 90%;
+        height: 70%;
+        padding: 10px 20px 30px 20px;
+        margin-top: 5vh;
+        opacity: 100%;
+        text-align: center;
+        border-radius: 0;
+        background: whitesmoke;
+        box-shadow: none;
+    }
+}

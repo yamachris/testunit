@@ -111,7 +111,7 @@ form {
 button {
     display: block;
     background-color: var(--blanc);
-    font-size: large;
+    font-size: 1.5em;
     font-weight: bold;
     border: 1px solid transparent;
     border-radius: 50px;

@@ -135,7 +135,7 @@ td>img {
 @media screen and (max-width: 985px) {
     table {
         width: 98%;
-        height: 70%;
+        height: 75vh;
     }
     section:nth-child(6)>menu {
         width: 90vw;
@@ -156,6 +156,6 @@ td>img {
         width: 98%;
     }
     tr {
-        height: 50px;
+        height: 60px;
     }
 }

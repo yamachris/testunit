@@ -16,8 +16,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
-    margin: 5% auto;
+    justify-content: space-around;
+    gap: 4%;
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
     padding: 20px;
     border: 1px solid var(--ombre);
     background-color: var(--lightbox);
@@ -26,9 +29,10 @@
 .lightbox-products-content>img {
     width: 100%;
     max-width: 500px;
+    margin-top: 10%;
 }
 
-.lightbox-products-content>.product-info {
+.lightbox-products-content>.products-info {
     text-align: center;
     color: var(--blanc);
 }
@@ -52,7 +56,6 @@
     cursor: pointer;
     padding: 10px;
     color: var(--blanc);
-    border: 1px solid var(--noir);
     background: transparent;
 }
 
@@ -90,8 +93,9 @@
     align-items: center;
     justify-content: space-around;
     gap: 4%;
-    width: 60%;
-    margin: 15% auto;
+    width: 80%;
+    height: 80%;
+    margin: 2% auto;
     padding: 20px;
     border: 1px solid var(--ombre);
     background-color: var(--lightbox);

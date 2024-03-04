@@ -4,7 +4,7 @@ html {
     scroll-behavior: smooth;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    background: var(--noir);
+    background: linear-gradient(-180deg, var(--noir), var(--blue));
     color: whitesmoke;
     -webkit-user-select: none;
     -webkit-touch-callout: none;

@@ -1,8 +1,10 @@
 :root {
     /*** Variables couleurs ***/
     --noir: hsl(240, 11%, 9%);
+    --blue: hsl(224, 25%, 17%);
     --dark: hsl(248, 16%, 18%);
-    --blanc: hsl(0, 0%, 96%);
+    --blanc: hsl(0, 10%, 96%);
+    --beige: hsl(0, 0%, 87%);
     --rouge: hsl(350, 85%, 42%);
     --lightbox: hsla(0, 0%, 0%, .9);
     --ombre: 1px 1px 4px hsla(0, 0%, 0%, .8);

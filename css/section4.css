@@ -11,13 +11,6 @@ section:nth-child(4) {
     z-index: 5;
 }
 
-section:nth-child(4):before {
-    content: "Bienvenue !";
-    font-size: 12em;
-    margin-top: 20vh;
-    z-index: -1;
-}
-
 form {
     position: absolute;
     display: flex;
@@ -38,14 +31,6 @@ form {
 
 form>h4 {
     font-size: 1.6em;
-}
-
-.animate-form {
-    animation: form 1s forwards;
-}
-
-.animate-submit {
-    animation: submit 10s forwards;
 }
 
 label[for="email"],
@@ -111,15 +96,6 @@ form>button {
 }
 
 @media screen and (max-width: 950px) {
-
-    section:nth-child(4):before {
-        content: "Bienvenue !";
-        font-size: 3.2em;
-        width: 100%;
-        margin-top: 30vh;
-        z-index: -1;
-    }
-
     section:nth-child(4) {
         min-height: 80vh;
         padding: 10vh 20vw 10vh 20vw;
@@ -142,14 +118,6 @@ form>button {
 }
 
 @media screen and (max-width: 380px) {
-
-    section:nth-child(4):before {
-        content: "";
-        font-size: 0;
-        width: 100%;
-        margin-top: 30vh;
-        z-index: -1;
-    }
 
     section:nth-child(4) {
         min-height: 80vh;

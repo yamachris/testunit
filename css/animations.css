@@ -31,36 +31,3 @@
         filter: brightness(1);
     }
 }
-
-@keyframes form {
-    from {
-        opacity: 0;
-        margin-left: -10000px;
-        transform: rotate3d(1, 1, 1, -45deg);
-    }
-    5% {
-        opacity: 100%;
-    }
-    to {
-        margin : 0;
-        transform: rotate3d(0);
-        opacity: 100%;
-    }
-}
-
-@keyframes submit {
-    from {
-        transform: rotate3d(0);
-        opacity: 100%;
-    }
-    10% {
-        margin-right: -10000px;
-        transform: rotate3d(1, 1, 1, 45deg);
-        opacity: 0;
-    }
-    to {
-        margin : 0;
-        transform: rotate3d(0);
-        opacity: 100%;
-    }
-}

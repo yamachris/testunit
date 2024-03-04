@@ -11,7 +11,7 @@ html {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    animation: 6s ease-out body forwards;
+    animation: 1s ease-out body forwards;
 }
 
 html::-webkit-scrollbar {

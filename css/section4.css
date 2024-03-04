@@ -4,7 +4,7 @@ section:nth-child(4) {
     align-items: center;
     justify-content: flex-start;
     max-width: 60vw;
-    max-height: 60vh;
+    max-height: 100vh;
     min-height: 650px;
     padding: 20vh 20vw 20vh 20vw;
     border-radius: 20px;
@@ -19,7 +19,6 @@ form {
     justify-content: flex-start;
     width: 60%;
     height: 550px;
-    opacity: 0;
     border-radius: 50px;
     text-align: center;
     background: #e0e0e0;
@@ -33,21 +32,21 @@ form>h4 {
     font-size: 1.6em;
 }
 
-label[for="email"],
-label[for="user"],
-label[for="pass"],
-label[for="confirm"] {
+form>label[for="email"],
+form>label[for="user"],
+form>label[for="pass"],
+form>label[for="confirm"] {
     display: block;
     position: relative;
     min-width: 100%;
     margin: 6px 0px;
 }
 
-label>input[type="email"],
-label>input[type="text"],
-label>input[type="password"] {
+form>label>input[type="email"],
+form>label>input[type="text"],
+form>label>input[type="password"] {
     min-width: 90%;
-    height: 1.5em;
+    height: 3em;
     padding: .8em .6em .8em .8em;
     margin: .5em;
     background: linear-gradient(145deg, #f0f0f0, #cacaca);
@@ -58,19 +57,19 @@ label>input[type="password"] {
     box-shadow: var(--ombre);
 }
 
-label>input::placeholder {
+form>label>input::placeholder {
     font-size: 1.5em;
     font-weight: bolder;
 }
 
-label[for="email"]>input:focus,
-label[for="user"]>input:focus,
-label[for="pass"]>input:focus,
-label[for="confirm"]>input:focus,
-label[for="email"]>input:active,
-label[for="user"]>input:active,
-label[for="pass"]>input:active,
-label[for="confirm"]>input:active {
+form>label[for="email"]>input:focus,
+form>label[for="user"]>input:focus,
+form>label[for="pass"]>input:focus,
+form>label[for="confirm"]>input:focus,
+form>label[for="email"]>input:active,
+form>label[for="user"]>input:active,
+form>label[for="pass"]>input:active,
+form>label[for="confirm"]>input:active {
     min-width: 90%;
     height: 1.5em;
     padding: .8em .6em .8em .8em;
@@ -133,16 +132,15 @@ form>button {
         height: 70%;
         padding: 10px 20px 30px 20px;
         margin-top: 5vh;
-        opacity: 100%;
         text-align: center;
         border-radius: 0;
         background: whitesmoke;
         box-shadow: none;
     }
 
-    label>input[type="email"],
-    label>input[type="text"],
-    label>input[type="password"] {
+    form>label>input[type="email"],
+    form>label>input[type="text"],
+    form>label>input[type="password"] {
         min-width: 90%;
         height: 1.2em;
         padding: .8em .6em .8em .8em;

@@ -23,7 +23,7 @@ header>nav:nth-child(1) {
     align-items: center;
     justify-content: flex-start;
     width: 35%;
-    max-height: 100%;
+    height: 80px;
     z-index: 7;
 }
 
@@ -55,8 +55,8 @@ header>nav:nth-child(1)>a>h1 {
 }
 
 header>nav:nth-child(2) {
-    width: 68%;
-    max-height: 100%;
+    width: 58%;
+    height: 80px;
     z-index: 7;
 }
 
@@ -77,6 +77,11 @@ header>nav:nth-child(2)>menu>a {
     text-decoration: none;
     color: var(--noir);
     z-index: 9;
+}
+
+header>nav:nth-child(2)>menu>a>img {
+    width: auto;
+    max-height: 2em;
 }
 
 header>nav:nth-child(2)>menu>a:hover {

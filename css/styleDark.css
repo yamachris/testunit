@@ -56,30 +56,6 @@ header>nav>menu>a>img {
     background: var(--blanc);
 }
 
-/*#colorSwitcher.dark {
-    display: block;
-    position: sticky;
-    align-self: flex-end;
-    justify-self: flex-end;
-    width: auto;
-    height: auto;
-    bottom: 0;
-    padding: 0 10px 10px 0;
-    border-radius: 8px 0 0 8px;
-    animation: 1s ease-in colorSwitch forwards;
-    z-index: 20;
-}
-
-#colorSwitcher.dark::before {
-    content: url(../img/main/sun.png);
-    filter: contrast(0) brightness(2);
-}
-
-#colorSwitcher::before {
-    content: url(../img/main/moon.png);
-    filter: contrast(0) brightness(2);
-}*/
-
 main {
     display: flex;
     flex-flow: column nowrap;

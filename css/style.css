@@ -44,30 +44,6 @@ header>menu>a>img {
     filter: none;
 }
 
-/*#colorSwitcher {
-    display: block;
-    position: sticky;
-    align-self: flex-end;
-    justify-self: flex-end;
-    width: auto;
-    height: auto;
-    bottom: 0;
-    padding: 0 10px 10px 0;
-    border-radius: 8px 0 0 8px;
-    animation: 2s ease-in colorSwitch forwards;
-    z-index: 20;
-}
-
-#colorSwitcher.dark::before {
-    content: url(../img/main/sun.png);
-    filter: brightness(0);
-}
-
-#colorSwitcher::before {
-    content: url(../img/main/moon.png);
-    filter: brightness(0);
-}*/
-
 main {
     display: flex;
     flex-flow: column nowrap;

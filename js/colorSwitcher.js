@@ -1,7 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var colorSwitcher = document.getElementById('colorSwitcher');
+    var colorSwitcher = document.getElementById('dark-mode');
     var currentStyleSheet = document.getElementById('currentStyleSheet');
     var isDarkThemeActive = false; // Indicateur du thème actif
+
+    (function() {
+        var toggle_switch;
+      
+        toggle_switch = document.querySelector('#dark-mode');
+      
+        toggle_switch.addEventListener('input', function() {
+          var body, label;
+          label = this.labels[0];
+          body = document.body;
+          return body.dataset.darkMode = label.dataset.darkMode = this.checked;
+        });
+      
+      }).call(this);
 
     // Fonction pour définir le thème
     function setTheme(theme) {

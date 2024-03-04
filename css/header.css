@@ -95,22 +95,24 @@ header>nav:nth-child(2)>menu>a[href="#demo"] {
 header>nav:nth-child(2)>menu>a[href="#demo"]:hover {
     filter: invert(2);
 }
+
 /* Selector language */
 
 .language-selector {
     position: relative;
     display: inline-block;
-  }
-  
-  .selected-lang img, .option img {
+}
+
+.selected-lang img, .option img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    /* border: 2px solid #000; */ /* Ajout d'une bordure noire pour visibilité */
+    /* border: 2px solid #000; */
+    /* Ajout d'une bordure noire pour visibilité */
     cursor: pointer;
-  }
-  
-  .language-options {
+}
+
+.language-options {
     display: none;
     position: absolute;
     top: 100%;
@@ -118,21 +120,23 @@ header>nav:nth-child(2)>menu>a[href="#demo"]:hover {
     background-color: transparent;
     padding: 5px 0;
     z-index: 1;
-  }
-  
-  .option {
+}
+
+.option {
     margin-top: 5px;
-    position: relative; /* Important pour le positionnement du popover */
-  }
-  
-  .option:first-child {
+    position: relative;
+    /* Important pour le positionnement du popover */
+}
+
+.option:first-child {
     margin-top: 0;
-  }
-  
-  .popover {
+}
+
+.popover {
     display: none;
     position: absolute;
-    left: calc(100% + 10px); /* Affichage à droite avec un petit espace */
+    left: calc(100% + 10px);
+    /* Affichage à droite avec un petit espace */
     top: 50%;
     transform: translateY(-50%);
     background-color: black;
@@ -141,7 +145,12 @@ header>nav:nth-child(2)>menu>a[href="#demo"]:hover {
     border-radius: 5px;
     white-space: nowrap;
     z-index: 2;
-  }
+}
+
+#colorSwitcher {
+    width: 8%;
+    height: auto;
+}
 
 @media screen and (max-width: 1200px) {
     header {

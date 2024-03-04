@@ -1,0 +1,169 @@
+body {
+    background-color: transparent;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: 1s ease background-color 0.6s;
+  }
+  body[data-dark-mode="true"] {
+    background-color: transparent;
+  }
+  body *,
+  body *::before,
+  body *::after {
+    position: relative;
+    box-sizing: border-box;
+  }
+  body .switch {
+    border-radius: 9999px;
+    border: 1px solid #00000000;
+    padding: 5px;
+    background-color: #409fe4;
+    background-clip: padding-box;
+    box-shadow: -1px 5px 4px inset rgba(0, 0, 0, 0.44);
+    height: 42px;
+    box-sizing: content-box;
+    z-index: 1;
+    border: 2px solid #00000000;
+    transition: 0.1s ease;
+    cursor: pointer;
+  }
+  body .switch::before {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+    right: -1px;
+    z-index: -1;
+    background: linear-gradient(130deg, #a1b4d1, #fefefd);
+  }
+  body .switch::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transition: 1s ease 0.1s;
+    transition: 1s cubic-bezier(0.65, -0.05, 0.29, 1.2);
+    background-color: inherit;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/archiprivatechat.appspot.com/o/public%2FClouds.png?alt=media&token=86cc7c55-ee79-4ff7-a875-da234fa5619e&_gl=1*xlhdpj*_ga*MzczMTQ1OTY0LjE2OTI5NDE3OTY.*_ga_CW55HF8NVT*MTY5OTIzNTEyNS43LjEuMTY5OTIzNTM0Mi41Ny4wLjA.");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  body .shadow-overlay {
+    position: absolute;
+    inset: 0;
+    box-shadow: -1px 5px 4px inset rgba(0, 0, 0, 0.44);
+    border-radius: inherit;
+    z-index: 10;
+  }
+  body .sun-moon::before {
+    position: absolute;
+    content: "";
+    border-radius: inherit;
+    inset: 1px;
+    background-color: #fed32f;
+  }
+  body .insetcover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: inherit;
+    overflow: hidden;
+    border-radius: inherit;
+  }
+  body .sun-moon-shadow {
+    font-size: 42px;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    border-radius: 50%;
+    right: calc(100% - 5px - 1em);
+    transition: 0.6s ease;
+    transition: 0.6s cubic-bezier(0.65, -0.05, 0.29, 1.2);
+    z-index: 1;
+    box-shadow: 0 8px 11px rgba(0, 0, 0, 0.44);
+  }
+  body .sun-moon {
+    font-size: 42px;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    background-image: linear-gradient(130deg, #f2fa8f, #eb9a25);
+    border-radius: 50%;
+    right: calc(100% - 5px - 1em);
+    transition: 0.6s ease;
+    transition: 0.6s cubic-bezier(0.65, -0.05, 0.29, 1.2);
+    background-clip: padding-box;
+    z-index: 5;
+    box-shadow: 0 0 0 9px rgba(255, 255, 255, 0.1), 0 0 0 18px rgba(255, 255, 255, 0.1), 0 0 0 27px rgba(255, 255, 255, 0.1);
+  }
+  body .sun-moon.moon {
+    background-image: linear-gradient(130deg, #fafbfe, #9aa4b1);
+    opacity: 0;
+  }
+  body .sun-moon.moon::before {
+    position: absolute;
+    content: "";
+    border-radius: inherit;
+    inset: 1px;
+    background-color: #d2d9e1;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/archiprivatechat.appspot.com/o/public%2FMoon%20Crater.png?alt=media&token=c305600c-f793-4491-b427-0a9300df17c8&_gl=1*17ld4ao*_ga*MzczMTQ1OTY0.LjE2OTI5NDE3OTY.*_ga_CW55HF8NVT*MTY5OTIzNTEyNS43LjEuMTY5OTIzNTI1MS40Mi4wLjA.");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #dark-mode {
+    display: none;
+  }
+  .stars {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/archiprivatechat.appspot.com/o/public%2FStars.png?alt=media&token=ca411807-b26a-4bfe-ae17-87403ad20eaf&_gl=1*1rwlclr*_ga*MzczMTQ1OTY0.LjE2OTI5NDE3OTY.*_ga_CW55HF8NVT*MTY5OTIzNTEyNS43LjEuMTY5OTIzNTIzMy42MC4wLjA.");
+    position: absolute;
+    width: 45%;
+    bottom: 5px;
+    height: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.4s ease 0s;
+    transition: 0.6s cubic-bezier(0.65, -0.05, 0.29, 1.2);
+    transform: translateY(-125%) translateZ(0);
+  }
+  #dark-mode:checked + .insetcover .sun-moon,
+  #dark-mode:checked ~ .sun-moon-shadow {
+    right: 5px;
+  }
+  #dark-mode:checked + .insetcover .sun {
+    opacity: 0;
+  }
+  #dark-mode:not(:checked) + .insetcover .moon {
+    transform: rotate(-180deg);
+  }
+  #dark-mode:checked + .insetcover .moon {
+    opacity: 1;
+  }
+  #dark-mode:checked + .insetcover .stars {
+    transform: translateY(0%) translateZ(0);
+    transition: 1s ease 0.1s;
+    transition: 1s cubic-bezier(0.65, -0.05, 0.29, 1.2);
+  }
+  label[data-dark-mode="true"] .switch {
+    background-color: #212737;
+  }
+  label[data-dark-mode="true"] .switch::after {
+    background-position: 0px 100px;
+  }
+  label[for="dark-mode"] {
+    width: clamp(50px, 100%, 100px);
+    scale: 2;
+  }

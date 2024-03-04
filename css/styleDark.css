@@ -56,7 +56,7 @@ header>nav>menu>a>img {
     background: var(--blanc);
 }
 
-#colorSwitcher.dark {
+/*#colorSwitcher.dark {
     display: block;
     position: sticky;
     align-self: flex-end;
@@ -78,7 +78,7 @@ header>nav>menu>a>img {
 #colorSwitcher::before {
     content: url(../img/main/moon.png);
     filter: contrast(0) brightness(2);
-}
+}*/
 
 main {
     display: flex;

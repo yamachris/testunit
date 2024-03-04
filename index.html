@@ -35,6 +35,20 @@
                       <div class="option" data-lang="Italiano"><img src="./img/langue/it.svg" alt="" /></div>
                     </div>
                 </div>
+                <i id="colorSwitcher">
+                <label for="dark-mode">
+                    <div class="switch">
+                      <input id="dark-mode" type="checkbox"/>
+                      <div class="insetcover">
+                        <div class="sun-moon sun"></div>
+                        <div class="sun-moon moon"></div>
+                        <div class="stars"></div>
+                      </div>
+                      <div class="sun-moon-shadow"></div>
+                      <div class="shadow-overlay"></div>
+                    </div>
+                </i>
+                  </label>
             </menu>
         </nav>
     </header>
@@ -80,16 +94,16 @@
         <section id="login">
             <form>
                 <h4 class="text-warning text-center pt-5">Registration form</h4>
-                <label>
+                <label for="email">
                   <input type="text" class="input" name="email" placeholder="ENTER EMAIL"/>
                 </label>
-                <label>
+                <label for="user">
                     <input type="text" class="input" name="username" placeholder="ENTER USERNAME"/>
                 </label>
-                <label>
+                <label for="pass">
                     <input type="password" class="input" name="password" placeholder="ENTER PASSWORD"/>
                 </label>
-                <label>
+                <label for="confirm">
                   <input type="password" class="input" name="confirm" placeholder="CONFIRM PASSWORD"/>
                 </label>
                 <button type="submit">submit</button>
@@ -121,7 +135,6 @@
         </section>
     </main>
     <footer></footer>
-    <i id="colorSwitcher"></i>
     <script src="./js/colorSwitcher.js"></script>
     <script src="./js/displayPlayersRanking.js"></script>
     <script src="./js/article.js"></script>

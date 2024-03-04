@@ -44,7 +44,7 @@ header>menu>a>img {
     filter: none;
 }
 
-#colorSwitcher {
+/*#colorSwitcher {
     display: block;
     position: sticky;
     align-self: flex-end;
@@ -66,7 +66,7 @@ header>menu>a>img {
 #colorSwitcher::before {
     content: url(../img/main/moon.png);
     filter: brightness(0);
-}
+}*/
 
 main {
     display: flex;

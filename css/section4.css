@@ -48,14 +48,19 @@ form>h4 {
     animation: submit 10s forwards;
 }
 
-label {
+label[for="email"],
+label[for="user"],
+label[for="pass"],
+label[for="confirm"] {
     display: block;
     position: relative;
     min-width: 100%;
     margin: 6px 0px;
 }
 
-label>input {
+label>input[type="email"],
+label>input[type="text"],
+label>input[type="password"] {
     min-width: 90%;
     height: 1.5em;
     padding: .8em .6em .8em .8em;
@@ -73,8 +78,14 @@ label>input::placeholder {
     font-weight: bolder;
 }
 
-label>input:focus,
-label>input:active {
+label[for="email"]>input:focus,
+label[for="user"]>input:focus,
+label[for="pass"]>input:focus,
+label[for="confirm"]>input:focus,
+label[for="email"]>input:active,
+label[for="user"]>input:active,
+label[for="pass"]>input:active,
+label[for="confirm"]>input:active {
     min-width: 90%;
     height: 1.5em;
     padding: .8em .6em .8em .8em;
@@ -161,7 +172,9 @@ form>button {
         box-shadow: none;
     }
 
-    label>input {
+    label>input[type="email"],
+    label>input[type="text"],
+    label>input[type="password"] {
         min-width: 90%;
         height: 1.2em;
         padding: .8em .6em .8em .8em;
